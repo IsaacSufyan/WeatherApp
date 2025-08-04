@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">SLWeatherApp</string>
+
+    <string name="detail_screen">Detail Screen SLWeatherApp</string>
+    <string name="feels_like_in_degree">Feels Like: %s℃</string>
+    <string name="temp_in_degree">Temp: %s℃</string>
+
+    <string name="temp_min">Min: %s℃</string>
+    <string name="temp_max">Max: %s℃</string>
+    <string name="temp_home">%s℃</string>
+    <string name="today_weather">Today Weather</string>
+    <string name="today">Today</string>
+
+    <string name="temp_degree">%s℃</string>
+
+
+    <string name="condition">Condition:</string>
+    <string name="weather_condition">Weather Condition</string>
+    <string name="wind_speed_in_kph">"Wind speed in kph: %s"</string>
+    <string name="uv_index">UV INDEX</string>
+    <string name="moderate">Moderate</string>
+    <string name="low">Low</string>
+    <string name="high">High</string>
+    <string name="very_high">Very High</string>
+    <string name="extreme">Extreme</string>
+    <string name="humidity">Humidity</string>
+    <string name="day">Day time</string>
+    <string name="night">Night time</string>
+    <string name="weather_information">Weather Information</string>
+    <string name="vis_kph">Vis</string>
+    <string name="gust_kph">Gust</string>
+    <string name="wind_direction">Dir</string>
+    <string name="cloud">Cloud</string>
+    <string name="_7_days_forecasts">7-Days Forecasts</string>
+</resources>
