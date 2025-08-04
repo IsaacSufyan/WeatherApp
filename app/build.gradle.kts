@@ -24,22 +24,25 @@ android {
         applicationId = "com.isaacsufyan.weatherapp"
         minSdk = 24
         targetSdk = 36
-        versionCode = 2
+        versionCode = 3
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        signingConfig = signingConfigs.getByName("release")
     }
 
 
     buildTypes {
+        debug {
+            manifestPlaceholders["ADMOB_APP_ID"] = "ca-app-pub-3940256099942544~3347511713"
+            buildConfigField("String", "ADMOB_INTERSTITIAL_ID", "\"ca-app-pub-3940256099942544/1033173712\"")
+            isShrinkResources = false
+            isMinifyEnabled = false
+        }
         release {
-            isShrinkResources  = true
+            manifestPlaceholders["ADMOB_APP_ID"] = "ca-app-pub-8898127751161493~4377603053"
+            buildConfigField("String","ADMOB_INTERSTITIAL_ID","\"ca-app-pub-8898127751161493/9645908738\"")
+            isShrinkResources = true
             isMinifyEnabled = true
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     compileOptions {
@@ -89,5 +92,5 @@ dependencies {
     implementation(project(":CoreUI"))
     implementation(libs.kotlinx.collections.immutable)
     implementation(libs.coil)
-
+    implementation(libs.play.services.ads)
 }

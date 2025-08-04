@@ -22,3 +22,10 @@
 
 -keep class com.isaacsufyan.weatherapp.business.data.api.model.** { *; }
 -keep class com.isaacsufyan.weatherapp.business.domain.model.** { *; }
+-keep public class com.google.android.gms.ads.** {
+    public *;
+}
+-keep public class com.google.ads.** {
+    public *;
+}
+
